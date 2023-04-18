@@ -5,6 +5,7 @@
 2. [Product Spec](#Product-Spec)
 3. [Wireframes](#Wireframes)
 <!--4. [Schema](#Schema)-->
+4. [Progress](#Progress)
 
 ## Overview
 ### Description
@@ -105,3 +106,7 @@ Made with Figma.
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
 -->
+
+## Progress
+### Week 1
+- The implementation of the Authentication and Profile storyboards is almost complete. Writing the logic for these pages has started.
