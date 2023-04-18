@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B8D7FC529EF1D6D0025D0FD /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3B8D7FC429EF1D6D0025D0FD /* ParseSwift */; };
+		3B8D7FC829EF1D780025D0FD /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3B8D7FC729EF1D780025D0FD /* AlamofireImage */; };
 		BFB74F1E29E6338D00037484 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB74F1D29E6338D00037484 /* AppDelegate.swift */; };
 		BFB74F2029E6338D00037484 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB74F1F29E6338D00037484 /* SceneDelegate.swift */; };
 		BFB74F2229E6338D00037484 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB74F2129E6338D00037484 /* ViewController.swift */; };
@@ -58,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B8D7FC529EF1D6D0025D0FD /* ParseSwift in Frameworks */,
+				3B8D7FC829EF1D780025D0FD /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +150,10 @@
 			dependencies = (
 			);
 			name = Petgram;
+			packageProductDependencies = (
+				3B8D7FC429EF1D6D0025D0FD /* ParseSwift */,
+				3B8D7FC729EF1D780025D0FD /* AlamofireImage */,
+			);
 			productName = Petgram;
 			productReference = BFB74F1A29E6338D00037484 /* Petgram.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +226,10 @@
 				Base,
 			);
 			mainGroup = BFB74F1129E6338D00037484;
+			packageReferences = (
+				3B8D7FC329EF1D6D0025D0FD /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+				3B8D7FC629EF1D780025D0FD /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = BFB74F1B29E6338D00037484 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -600,6 +612,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B8D7FC329EF1D6D0025D0FD /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		3B8D7FC629EF1D780025D0FD /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B8D7FC429EF1D6D0025D0FD /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B8D7FC329EF1D6D0025D0FD /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+		3B8D7FC729EF1D780025D0FD /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B8D7FC629EF1D780025D0FD /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		BFB74F2629E6338D00037484 /* Petgram.xcdatamodeld */ = {
