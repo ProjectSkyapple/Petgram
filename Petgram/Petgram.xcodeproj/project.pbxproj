@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		3B8D7FC529EF1D6D0025D0FD /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 3B8D7FC429EF1D6D0025D0FD /* ParseSwift */; };
 		3B8D7FC829EF1D780025D0FD /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 3B8D7FC729EF1D780025D0FD /* AlamofireImage */; };
+		3B8D7FCA29EF28CA0025D0FD /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D7FC929EF28CA0025D0FD /* FeedViewController.swift */; };
+		3B8D7FCC29EF28D70025D0FD /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D7FCB29EF28D70025D0FD /* PostViewController.swift */; };
+		3B8D7FCE29EF28EF0025D0FD /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D7FCD29EF28EF0025D0FD /* PostCell.swift */; };
+		3B8D7FD229EF76A00025D0FD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D7FD129EF76A00025D0FD /* User.swift */; };
+		3B8D7FD429EF79CA0025D0FD /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D7FD329EF79CA0025D0FD /* Posts.swift */; };
+		3B8D7FD629EF7B490025D0FD /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D7FD529EF7B490025D0FD /* DateFormatter+Extensions.swift */; };
 		BFB74F1E29E6338D00037484 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB74F1D29E6338D00037484 /* AppDelegate.swift */; };
 		BFB74F2029E6338D00037484 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB74F1F29E6338D00037484 /* SceneDelegate.swift */; };
 		BFB74F2229E6338D00037484 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB74F2129E6338D00037484 /* ViewController.swift */; };
@@ -39,6 +45,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3B8D7FC929EF28CA0025D0FD /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		3B8D7FCB29EF28D70025D0FD /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		3B8D7FCD29EF28EF0025D0FD /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		3B8D7FD129EF76A00025D0FD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3B8D7FD329EF79CA0025D0FD /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
+		3B8D7FD529EF7B490025D0FD /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		BFB74F1A29E6338D00037484 /* Petgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB74F1D29E6338D00037484 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFB74F1F29E6338D00037484 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +94,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B8D7FCF29EF29090025D0FD /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				3B8D7FCD29EF28EF0025D0FD /* PostCell.swift */,
+				3B8D7FC929EF28CA0025D0FD /* FeedViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		3B8D7FD029EF29240025D0FD /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				3B8D7FCB29EF28D70025D0FD /* PostViewController.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
 		BFB74F1129E6338D00037484 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +142,11 @@
 				BFB74F2B29E6338F00037484 /* LaunchScreen.storyboard */,
 				BFB74F2E29E6338F00037484 /* Info.plist */,
 				BFB74F2629E6338D00037484 /* Petgram.xcdatamodeld */,
+				3B8D7FD029EF29240025D0FD /* Post */,
+				3B8D7FCF29EF29090025D0FD /* Feed */,
+				3B8D7FD129EF76A00025D0FD /* User.swift */,
+				3B8D7FD329EF79CA0025D0FD /* Posts.swift */,
+				3B8D7FD529EF7B490025D0FD /* DateFormatter+Extensions.swift */,
 			);
 			path = Petgram;
 			sourceTree = "<group>";
@@ -273,9 +307,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B8D7FCE29EF28EF0025D0FD /* PostCell.swift in Sources */,
+				3B8D7FCC29EF28D70025D0FD /* PostViewController.swift in Sources */,
 				BFB74F2829E6338D00037484 /* Petgram.xcdatamodeld in Sources */,
 				BFB74F2229E6338D00037484 /* ViewController.swift in Sources */,
+				3B8D7FD629EF7B490025D0FD /* DateFormatter+Extensions.swift in Sources */,
+				3B8D7FD229EF76A00025D0FD /* User.swift in Sources */,
+				3B8D7FCA29EF28CA0025D0FD /* FeedViewController.swift in Sources */,
 				BFB74F1E29E6338D00037484 /* AppDelegate.swift in Sources */,
+				3B8D7FD429EF79CA0025D0FD /* Posts.swift in Sources */,
 				BFB74F2029E6338D00037484 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
