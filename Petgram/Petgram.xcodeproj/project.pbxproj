@@ -17,6 +17,7 @@
 		3B8D7FD629EF7B490025D0FD /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D7FD529EF7B490025D0FD /* DateFormatter+Extensions.swift */; };
 		BF78F57629ED2DC10046D300 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF78F57529ED2DC10046D300 /* Authentication.storyboard */; };
 		BF78F57A29EF47310046D300 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF78F57929EF47310046D300 /* Profile.storyboard */; };
+		BF78F57C29EF9D580046D300 /* Onboarding1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF78F57B29EF9D580046D300 /* Onboarding1ViewController.swift */; };
 		BFB74F1E29E6338D00037484 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB74F1D29E6338D00037484 /* AppDelegate.swift */; };
 		BFB74F2029E6338D00037484 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB74F1F29E6338D00037484 /* SceneDelegate.swift */; };
 		BFB74F2229E6338D00037484 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB74F2129E6338D00037484 /* ViewController.swift */; };
@@ -55,6 +56,7 @@
 		3B8D7FD529EF7B490025D0FD /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		BF78F57529ED2DC10046D300 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		BF78F57929EF47310046D300 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		BF78F57B29EF9D580046D300 /* Onboarding1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding1ViewController.swift; sourceTree = "<group>"; };
 		BFB74F1A29E6338D00037484 /* Petgram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petgram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB74F1D29E6338D00037484 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFB74F1F29E6338D00037484 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 		BFB74F1129E6338D00037484 = {
 			isa = PBXGroup;
 			children = (
+				BF78F57B29EF9D580046D300 /* Onboarding1ViewController.swift */,
 				BF78F57529ED2DC10046D300 /* Authentication.storyboard */,
 				BF78F57929EF47310046D300 /* Profile.storyboard */,
 				BFB74F1C29E6338D00037484 /* Petgram */,
@@ -324,6 +327,7 @@
 				3B8D7FCA29EF28CA0025D0FD /* FeedViewController.swift in Sources */,
 				BFB74F1E29E6338D00037484 /* AppDelegate.swift in Sources */,
 				3B8D7FD429EF79CA0025D0FD /* Posts.swift in Sources */,
+				BF78F57C29EF9D580046D300 /* Onboarding1ViewController.swift in Sources */,
 				BFB74F2029E6338D00037484 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
