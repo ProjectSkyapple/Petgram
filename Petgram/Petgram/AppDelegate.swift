@@ -7,6 +7,7 @@
 
 import UIKit
 import CoreData
+import ParseSwift
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        ParseSwift.initialize(applicationId: "PTr72ig20DmOHoXLaPW5F9ni5ttnWCZkUlg8VXcJ",
+                              clientKey: "bPZ0xaOtDPZ1b0OEFD0m7Ss2SfYKmxsUzbewRQ4a",
+                              serverURL: URL(string: "https://parseapi.back4app.com")!)
         return true
     }
 
