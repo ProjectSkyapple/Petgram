@@ -108,5 +108,11 @@ Made with Figma.
 -->
 
 ## Progress
-### Week 1
+### Week 1 end
 - The implementation of the Authentication and Profile storyboards is almost complete. Writing the logic for these pages has started.
+
+### Week 2 end
+- The implementation of the Authentication and Profile storyboards is complete. The logic for these pages is almost complete.
+- The implementation of the Home and Create Post design and logic is complete.
+- Only the Settings screen remains to be completely implemented.
+- (Meet all MVP goals by Friday, April 28, 2023 (Week 3 end))
