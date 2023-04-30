@@ -15,6 +15,8 @@
 		3B8D7FD229EF76A00025D0FD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D7FD129EF76A00025D0FD /* User.swift */; };
 		3B8D7FD429EF79CA0025D0FD /* Posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D7FD329EF79CA0025D0FD /* Posts.swift */; };
 		3B8D7FD629EF7B490025D0FD /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8D7FD529EF7B490025D0FD /* DateFormatter+Extensions.swift */; };
+		BF51829829FE002D003025AE /* Onboarding3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51829729FE002D003025AE /* Onboarding3ViewController.swift */; };
+		BF51829A29FE1D5C003025AE /* Onboarding4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51829929FE1D5C003025AE /* Onboarding4ViewController.swift */; };
 		BF78F57629ED2DC10046D300 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF78F57529ED2DC10046D300 /* Authentication.storyboard */; };
 		BF78F57A29EF47310046D300 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF78F57929EF47310046D300 /* Profile.storyboard */; };
 		BF78F57C29EF9D580046D300 /* Onboarding1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF78F57B29EF9D580046D300 /* Onboarding1ViewController.swift */; };
@@ -28,6 +30,8 @@
 		BFB74F3829E6338F00037484 /* PetgramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB74F3729E6338F00037484 /* PetgramTests.swift */; };
 		BFB74F4229E6338F00037484 /* PetgramUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB74F4129E6338F00037484 /* PetgramUITests.swift */; };
 		BFB74F4429E6338F00037484 /* PetgramUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFB74F4329E6338F00037484 /* PetgramUITestsLaunchTests.swift */; };
+		BFF3EE8E29F66AFA00A8013E /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF3EE8D29F66AFA00A8013E /* Pet.swift */; };
+		BFF3EE9029F6702900A8013E /* Onboarding2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF3EE8F29F6702900A8013E /* Onboarding2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,8 @@
 		3B8D7FD129EF76A00025D0FD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3B8D7FD329EF79CA0025D0FD /* Posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Posts.swift; sourceTree = "<group>"; };
 		3B8D7FD529EF7B490025D0FD /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		BF51829729FE002D003025AE /* Onboarding3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding3ViewController.swift; sourceTree = "<group>"; };
+		BF51829929FE1D5C003025AE /* Onboarding4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding4ViewController.swift; sourceTree = "<group>"; };
 		BF78F57529ED2DC10046D300 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		BF78F57929EF47310046D300 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		BF78F57B29EF9D580046D300 /* Onboarding1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding1ViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +77,8 @@
 		BFB74F3D29E6338F00037484 /* PetgramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetgramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB74F4129E6338F00037484 /* PetgramUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetgramUITests.swift; sourceTree = "<group>"; };
 		BFB74F4329E6338F00037484 /* PetgramUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetgramUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BFF3EE8D29F66AFA00A8013E /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		BFF3EE8F29F6702900A8013E /* Onboarding2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +129,10 @@
 			isa = PBXGroup;
 			children = (
 				BF78F57B29EF9D580046D300 /* Onboarding1ViewController.swift */,
+				BFF3EE8F29F6702900A8013E /* Onboarding2ViewController.swift */,
+				BF51829729FE002D003025AE /* Onboarding3ViewController.swift */,
+				BFF3EE8D29F66AFA00A8013E /* Pet.swift */,
+				BF51829929FE1D5C003025AE /* Onboarding4ViewController.swift */,
 				BF78F57529ED2DC10046D300 /* Authentication.storyboard */,
 				BF78F57929EF47310046D300 /* Profile.storyboard */,
 				BFB74F1C29E6338D00037484 /* Petgram */,
@@ -323,10 +335,14 @@
 				BFB74F2829E6338D00037484 /* Petgram.xcdatamodeld in Sources */,
 				BFB74F2229E6338D00037484 /* ViewController.swift in Sources */,
 				3B8D7FD629EF7B490025D0FD /* DateFormatter+Extensions.swift in Sources */,
+				BF51829A29FE1D5C003025AE /* Onboarding4ViewController.swift in Sources */,
 				3B8D7FD229EF76A00025D0FD /* User.swift in Sources */,
+				BFF3EE9029F6702900A8013E /* Onboarding2ViewController.swift in Sources */,
+				BF51829829FE002D003025AE /* Onboarding3ViewController.swift in Sources */,
 				3B8D7FCA29EF28CA0025D0FD /* FeedViewController.swift in Sources */,
 				BFB74F1E29E6338D00037484 /* AppDelegate.swift in Sources */,
 				3B8D7FD429EF79CA0025D0FD /* Posts.swift in Sources */,
+				BFF3EE8E29F66AFA00A8013E /* Pet.swift in Sources */,
 				BF78F57C29EF9D580046D300 /* Onboarding1ViewController.swift in Sources */,
 				BFB74F2029E6338D00037484 /* SceneDelegate.swift in Sources */,
 			);

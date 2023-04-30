@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Onboarding1 View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="Onboarding1ViewController" customModule="Petgram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,6 +133,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Continue"/>
                                 <connections>
+                                    <action selector="didTapContinueButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9er-Hf-NxX"/>
                                     <segue destination="ud1-M4-hoh" kind="show" id="CeD-5d-ciT"/>
                                 </connections>
                             </button>
@@ -161,15 +162,21 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MO6-QY-ob0"/>
+                    <connections>
+                        <outlet property="NameTextField" destination="Xse-kC-n3f" id="NSr-cV-mjE"/>
+                        <outlet property="SpeciesTextField" destination="S9H-ry-jgu" id="ODH-uz-Hgr"/>
+                        <outlet property="TypeTextField" destination="hBo-F6-qul" id="wh7-Jo-JJ2"/>
+                        <outlet property="birthDatePicker" destination="uim-yL-O9h" id="ZJC-wQ-D5q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="930.53435114503816" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Onboarding2 View Controller-->
         <scene sceneID="iB7-c3-969">
             <objects>
-                <viewController id="ud1-M4-hoh" sceneMemberID="viewController">
+                <viewController id="ud1-M4-hoh" customClass="Onboarding2ViewController" customModule="Petgram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ns5-A0-HlD">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -236,6 +243,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Continue"/>
                                 <connections>
+                                    <action selector="didTapContinueButton:" destination="ud1-M4-hoh" eventType="touchUpInside" id="ezo-tH-J0H"/>
                                     <segue destination="XjH-Vc-fBQ" kind="show" id="jKb-os-JHQ"/>
                                 </connections>
                             </button>
@@ -264,15 +272,19 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Lcb-Dd-SGq"/>
+                    <connections>
+                        <outlet property="LocationTextField" destination="u2K-6c-wfe" id="E8w-SM-7A0"/>
+                        <outlet property="TalentsAndAbilitiesTextField" destination="JGu-RG-uZ0" id="qjE-cW-1Rv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nzI-pO-uVy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1631.2977099236641" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Onboarding3 View Controller-->
         <scene sceneID="NyT-9Z-wZ3">
             <objects>
-                <viewController id="XjH-Vc-fBQ" sceneMemberID="viewController">
+                <viewController id="XjH-Vc-fBQ" customClass="Onboarding3ViewController" customModule="Petgram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7W9-wN-ts4">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -298,6 +310,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Continue"/>
                                 <connections>
+                                    <action selector="didTapContinueButton:" destination="XjH-Vc-fBQ" eventType="touchUpInside" id="ifk-hV-jot"/>
                                     <segue destination="0cP-AN-ObO" kind="show" id="frc-gY-jHU"/>
                                 </connections>
                             </button>
@@ -308,6 +321,9 @@
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Select Photo..."/>
+                                <connections>
+                                    <action selector="didTapSelectPhotosButton:" destination="XjH-Vc-fBQ" eventType="touchUpInside" id="xmy-4e-wUG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FZw-Uu-Ri8"/>
@@ -328,6 +344,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vli-qz-A5I"/>
+                    <connections>
+                        <outlet property="ProfilePhotoView" destination="96T-Mf-7pL" id="Qhc-Ja-0Dd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZAs-CS-JYa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -397,10 +416,10 @@
             </objects>
             <point key="canvasLocation" x="3776.3358778625952" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--Onboarding4 View Controller-->
         <scene sceneID="t4O-uU-mv5">
             <objects>
-                <viewController id="0cP-AN-ObO" sceneMemberID="viewController">
+                <viewController id="0cP-AN-ObO" customClass="Onboarding4ViewController" customModule="Petgram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I84-IG-VXD">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
