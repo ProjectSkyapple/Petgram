@@ -11,6 +11,7 @@ import ParseSwift
 
 class Onboarding5ViewController: UIViewController, PHPickerViewControllerDelegate {
     var user: User?
+    var pet: Pet?
     var profilePhoto: UIImage?
     
     @IBOutlet weak var ProfilePhotoView: UIImageView!
@@ -94,6 +95,7 @@ class Onboarding5ViewController: UIViewController, PHPickerViewControllerDelegat
         // Pass the selected object to the new view controller.
         if let nextViewController = segue.destination as? Onboarding6ViewController {
             nextViewController.user = user
+            nextViewController.pet = pet
         }
     }
 }

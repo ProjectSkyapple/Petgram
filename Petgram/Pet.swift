@@ -23,5 +23,5 @@ struct Pet: ParseObject {
     var talentsAndAbilities: String?
     var location: String?
     var profilePhoto: ParseFile?
-    var owner: User?
+    var owner: String?
 }

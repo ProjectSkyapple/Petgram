@@ -19,6 +19,7 @@
 		BF51829A29FE1D5C003025AE /* Onboarding4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51829929FE1D5C003025AE /* Onboarding4ViewController.swift */; };
 		BF51829C29FE54FA003025AE /* Onboarding5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51829B29FE54FA003025AE /* Onboarding5ViewController.swift */; };
 		BF51829E29FE6081003025AE /* Onboarding6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51829D29FE6081003025AE /* Onboarding6ViewController.swift */; };
+		BF5182A029FF0039003025AE /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF51829F29FF0039003025AE /* SignInViewController.swift */; };
 		BF78F57629ED2DC10046D300 /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF78F57529ED2DC10046D300 /* Authentication.storyboard */; };
 		BF78F57A29EF47310046D300 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF78F57929EF47310046D300 /* Profile.storyboard */; };
 		BF78F57C29EF9D580046D300 /* Onboarding1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF78F57B29EF9D580046D300 /* Onboarding1ViewController.swift */; };
@@ -64,6 +65,7 @@
 		BF51829929FE1D5C003025AE /* Onboarding4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding4ViewController.swift; sourceTree = "<group>"; };
 		BF51829B29FE54FA003025AE /* Onboarding5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding5ViewController.swift; sourceTree = "<group>"; };
 		BF51829D29FE6081003025AE /* Onboarding6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding6ViewController.swift; sourceTree = "<group>"; };
+		BF51829F29FF0039003025AE /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		BF78F57529ED2DC10046D300 /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		BF78F57929EF47310046D300 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		BF78F57B29EF9D580046D300 /* Onboarding1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding1ViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				BF51829B29FE54FA003025AE /* Onboarding5ViewController.swift */,
 				BF51829D29FE6081003025AE /* Onboarding6ViewController.swift */,
 				BF78F57529ED2DC10046D300 /* Authentication.storyboard */,
+				BF51829F29FF0039003025AE /* SignInViewController.swift */,
 				BF78F57929EF47310046D300 /* Profile.storyboard */,
 				BFB74F1C29E6338D00037484 /* Petgram */,
 				BFB74F3629E6338F00037484 /* PetgramTests */,
@@ -350,6 +353,7 @@
 				BFB74F1E29E6338D00037484 /* AppDelegate.swift in Sources */,
 				BF51829E29FE6081003025AE /* Onboarding6ViewController.swift in Sources */,
 				3B8D7FD429EF79CA0025D0FD /* Posts.swift in Sources */,
+				BF5182A029FF0039003025AE /* SignInViewController.swift in Sources */,
 				BFF3EE8E29F66AFA00A8013E /* Pet.swift in Sources */,
 				BF78F57C29EF9D580046D300 /* Onboarding1ViewController.swift in Sources */,
 				BFB74F2029E6338D00037484 /* SceneDelegate.swift in Sources */,

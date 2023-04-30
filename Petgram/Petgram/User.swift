@@ -25,6 +25,6 @@ struct User: ParseUser {
 
     // Your custom properties.
     var dateOfBirth: Date?
-    var pets: [Pet?]?
+    var pets: [String?]?
     var profilePhoto: ParseFile?
 }

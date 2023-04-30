@@ -9,6 +9,7 @@ import UIKit
 
 class Onboarding6ViewController: UIViewController {
     var user: User?
+    var pet: Pet?
     
     @IBOutlet weak var PasswordTextField: UITextField!
     
@@ -19,6 +20,34 @@ class Onboarding6ViewController: UIViewController {
         }
         
         user?.password = password
+        
+        user?.signup { [weak self] result in
+            switch result {
+            case .success(let user):
+                
+                print("✅ Successfully signed up user \(user.username!)")
+                self?.pet?.owner = user.objectId
+                
+            case .failure:
+                DispatchQueue.main.async {}
+            }
+            
+        }
+        
+        pet?.save { [weak self] result in
+            switch result {
+            case .success:
+                
+                print("✅ Successfully saved pet owner to pet")
+                
+                // Post a notification that the user has successfully signed up.
+                NotificationCenter.default.post(name: Notification.Name("login"), object: nil)
+                
+            case .failure:
+                DispatchQueue.main.async {}
+            }
+        }
+        
     }
     
     override func viewDidLoad() {

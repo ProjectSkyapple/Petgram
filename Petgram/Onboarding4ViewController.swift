@@ -24,8 +24,24 @@ class Onboarding4ViewController: UIViewController {
         var user = User()
         user.username = firstName + " " + lastName
         user.dateOfBirth = birthDatePicker.date
-        pet?.owner = user
-        user.pets = [pet]
+        
+        pet?.save { [weak self] result in
+
+            // Switch to the main thread for any UI updates
+            switch result {
+                case .success(let pet):
+                    print("✅ Pet Saved! \(pet)")
+                    self?.pet = pet // Return saved ParseObject with objectId
+                
+                case .failure:
+                    DispatchQueue.main.async {
+                    }
+            }
+            
+        }
+        
+        // pet?.owner = user.objectId
+        user.pets = [pet?.objectId]
         self.user = user
     }
     
@@ -42,6 +58,7 @@ class Onboarding4ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let nextViewController = segue.destination as? Onboarding5ViewController {
             nextViewController.user = user
+            nextViewController.pet = pet
         }
     }
 }
