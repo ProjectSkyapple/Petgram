@@ -24,5 +24,7 @@ struct User: ParseUser {
     var authData: [String: [String: String]?]?
 
     // Your custom properties.
-    // var customKey: String?
+    var dateOfBirth: Date?
+    var pets: [Pet?]?
+    var profilePhoto: ParseFile?
 }
