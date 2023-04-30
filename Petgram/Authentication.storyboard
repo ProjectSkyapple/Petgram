@@ -395,10 +395,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="H05-DO-KsW"/>
                     <connections>
-                        <outlet property="LocationTextField" destination="m1y-RW-gbb" id="vBs-5M-dia"/>
                         <outlet property="NameTextField" destination="tFU-f6-E21" id="I8v-kg-JaX"/>
                         <outlet property="PasswordTextField" destination="m1y-RW-gbb" id="c6g-aR-upP"/>
-                        <outlet property="TalentsAndAbilitiesTextField" destination="tFU-f6-E21" id="4mh-YM-XXT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2tq-W6-436" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -760,7 +758,7 @@
         <!--Navigation Controller-->
         <scene sceneID="gND-mb-GDk">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zyf-lh-v9z" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="AuthenticationNavigationController" automaticallyAdjustsScrollViewInsets="NO" id="Zyf-lh-v9z" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="drm-3U-pRr">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
