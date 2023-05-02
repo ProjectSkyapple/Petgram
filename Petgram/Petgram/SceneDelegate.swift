@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ParseSwift
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -22,24 +23,34 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             NotificationCenter.default.addObserver(forName: Notification.Name("logout"), object: nil, queue: OperationQueue.main) { [weak self] _ in
                 self?.logout()
             }
-
-            // if User.current != nil {
-            //    login()
-            // }
         
-            logout()
+            NotificationCenter.default.addObserver(forName: Notification.Name("post created"), object: nil, queue: OperationQueue.main) { [weak self] _ in
+                self?.goHome()
+            }
+
+            if User.current != nil {
+                login()
+                print(User.current)
+            }
+        
         }
 
         private func login() {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "FeedNavigationController")
+            self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "MainTabBarController")
         }
 
         private func logout() {
             // Programmatically set the current displayed view controller.
             let storyboard = UIStoryboard(name: "Authentication", bundle: nil)
             self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "AuthenticationNavigationController")
-    }
+        }
+    
+        private func goHome() {
+            // Programmatically set the current displayed view controller.
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: "MainTabBarController")
+        }
 
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
