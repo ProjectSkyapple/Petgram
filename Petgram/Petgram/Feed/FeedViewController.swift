@@ -12,6 +12,24 @@ class FeedViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBAction func didTapMenuBarButtonItem(_ sender: Any) {
+        User.logout { [weak self] result in
+            switch result {
+            case .success(let user):
+                
+                print("✅ Successfully logged out user \(user)")
+                
+                // Post a notification that the user has successfully logged out.
+                NotificationCenter.default.post(name: Notification.Name("logout"), object: nil)
+                
+            case .failure(let error):
+                // Failed logout
+                print(error)
+                NotificationCenter.default.post(name: Notification.Name("logout"), object: nil)
+            }
+        }
+    }
+    
     private let refreshControl = UIRefreshControl()
 
     private var posts = [Post]() {
@@ -32,6 +50,7 @@ class FeedViewController: UIViewController {
 
         tableView.refreshControl = refreshControl
         refreshControl.addTarget(self, action: #selector(onPullToRefresh), for: .valueChanged)
+        
     }
     
     @objc private func onPullToRefresh() {
