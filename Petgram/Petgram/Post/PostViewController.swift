@@ -20,6 +20,7 @@ class PostViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        previewImageView.layer.cornerRadius = 9
     }
 
     
@@ -116,7 +117,7 @@ class PostViewController: UIViewController {
 
         // Set the user as the current user
         post.user = User.current
-
+        print(User.current?.username)
         // Save post (async)
         post.save { [weak self] result in
 
@@ -125,7 +126,9 @@ class PostViewController: UIViewController {
                 switch result {
                 case .success(let post):
                     print("✅ Post Saved! \(post)")
-
+                    
+                    NotificationCenter.default.post(name: Notification.Name("post created"), object: nil)
+                    
                 case.failure(let error):
                     let error = UIAlertController(title: "Alert", message: "Error occured", preferredStyle: .alert)
                     // TODO: Pt 2 - Update user's last posted date
@@ -157,13 +160,13 @@ extension PostViewController: PHPickerViewControllerDelegate {
 
             // Make sure we can cast the returned object to a UIImage
             guard let image = object as? UIImage else {
-                let error = UIAlertController(title: "Alert", message: "Error occured", preferredStyle: .alert)
+                let error = UIAlertController(title: "Alert", message: "Error occurred", preferredStyle: .alert)
                 return
             }
 
             // Check for and handle any errors
             if let error = error {
-               let error = UIAlertController(title: "Alert", message: "Error occured", preferredStyle: .alert)
+               let error = UIAlertController(title: "Alert", message: "Error occurred", preferredStyle: .alert)
                 return
             } else {
 
