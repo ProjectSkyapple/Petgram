@@ -24,9 +24,10 @@ class SignInViewController: UIViewController {
                 print("✅ Successfully logged in as user: \(user.username!)")
                 
                 // Post a notification that the user has successfully logged in.
-                NotificationCenter.default.post(name: Notification.Name("signin"), object: nil)
+                NotificationCenter.default.post(name: Notification.Name("login"), object: nil)
                 
             case .failure:
+                print("uh oh")
                 DispatchQueue.main.async {}
             }
         }
