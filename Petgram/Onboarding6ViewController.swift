@@ -43,11 +43,22 @@ class Onboarding6ViewController: UIViewController {
                 // Post a notification that the user has successfully signed up.
                 NotificationCenter.default.post(name: Notification.Name("login"), object: nil)
                 
+                User.login(username: (self?.user?.username)!, password: password) { [weak self] result in
+                    switch result {
+                    case .success(let user):
+                        print("✅ Successfully logged in as user: \(user.username!)")
+                        
+                        // Post a notification that the user has successfully logged in.
+                        NotificationCenter.default.post(name: Notification.Name("login"), object: nil)
+                        
+                    case .failure:
+                        DispatchQueue.main.async {}
+                    }
+                }
             case .failure:
                 DispatchQueue.main.async {}
             }
         }
-        
     }
     
     override func viewDidLoad() {
