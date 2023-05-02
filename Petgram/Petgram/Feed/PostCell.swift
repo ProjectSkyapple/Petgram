@@ -21,11 +21,14 @@ class PostCell: UITableViewCell {
     func configure(with post: Post) {
         // TODO: Pt 1 - Configure Post Cell
 
+        postImageView.layer.cornerRadius = 9
         // Username
         if let user = post.user {
             usernameLabel.text = user.username
+            print(user)
+            print("oop")
         }
-
+        print("umm")
         // Image
         if let imageFile = post.imageFile,
            let imageUrl = imageFile.url {
