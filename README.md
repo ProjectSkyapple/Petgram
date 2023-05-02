@@ -1,6 +1,8 @@
 # Petgram
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/IpoEqpyqywI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+Watch a quick demo of our progress so far! Development will continue into the summer and more exciting surprises are on the way.
+
+[![Image](https://img.youtube.com/vi/IpoEqpyqywI/0.jpg)](https://youtu.be/IpoEqpyqywI)
 
 ## Table of Contents
 1. [Overview](#Overview)
